@@ -1,0 +1,4 @@
+node_modules/
+mongoose.js
+config.js
+package-lock.json
