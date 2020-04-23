@@ -7,7 +7,7 @@ let mongoose = require('mongoose');
 // Import routes
 let apiRoutes = require('./routes/api-routes');
 //Import config values
-let uriCred= require('./config.js')
+//let uriCred= require('./config.js')
 
 
 // Initialize the app
@@ -21,11 +21,13 @@ app.use(
 );
 app.use(bodyParser.json());
 
-console.log(uriCred["uriPwd"]);
+//console.log(uriCred["uriPwd"]);
+consoel.log(process.env.userId)
+consoel.log(process.env.pwd)
 
 // Connect to Mongoose and set connection variable
 var uri =
-    'mongodb://'+uriCred["user"]+':'+uriCred["pwd"]+'@' +
+    'mongodb://'+process.env.userId+':'+process.env.pwd+'@' +
 	// 'mongodb://mongoMan:mongo%40123@' +
 	'mongocluster-shard-00-01-qoact.mongodb.net:27017,' +
 	'mongocluster-shard-00-01-qoact.mongodb.net:27017,' +
