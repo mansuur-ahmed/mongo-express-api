@@ -22,8 +22,8 @@ app.use(
 app.use(bodyParser.json());
 
 //console.log(uriCred["uriPwd"]);
-consoel.log(process.env.userId)
-consoel.log(process.env.pwd)
+console.log(process.env.userId)
+console.log(process.env.pwd)
 
 // Connect to Mongoose and set connection variable
 var uri =
